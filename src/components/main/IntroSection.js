@@ -8,6 +8,7 @@ const IntroSectionBlock = styled(Section)``;
 const BtnList = styled.div`
   margin-top: 3rem;
   display: flex;
+  justify-content: center;
 `;
 
 const IntroSection = () => {
@@ -16,6 +17,8 @@ const IntroSection = () => {
       <TitleBox
         mainTitle={`A passionate developer \n who wants to run together`}
         subText="함께 달리고 싶은 열정적 프론트앤드 개발자 이희애입니다."
+        center
+        bigSize
       />
       <BtnList>
         <TalkButton />

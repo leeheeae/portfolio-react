@@ -10,6 +10,7 @@ const HeaderBlock = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  backdrop-filter: blur(2px);
 `;
 
 const InnerHeaderBlock = styled(Responsive)`

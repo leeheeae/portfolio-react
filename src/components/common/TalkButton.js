@@ -6,14 +6,16 @@ const TalkButtonBlock = styled.button`
   font-weight: 500;
   color: #fff;
   padding: 0.7rem 1.2rem;
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+  color: var(--black-color);
   border-radius: 4px;
-  border: 1px solid var(--gray-color-01);
   transition: 0.2s;
 
   &:hover {
-    background-color: var(--white-color);
-    border: 1px solid var(--white-color);
-    color: var(--black-color);
+    border: 1px solid var(--gray-color-01);
+    color: var(--white-color);
+    background: transparent;
   }
 `;
 

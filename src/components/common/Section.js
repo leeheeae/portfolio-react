@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Responsive from './Responsive';
 
 const SectionBlock = styled.section`
   width: 100%;
@@ -11,7 +12,11 @@ const SectionBlock = styled.section`
 `;
 
 const Section = ({ children }) => {
-  return <SectionBlock>{children}</SectionBlock>;
+  return (
+    <SectionBlock>
+      <Responsive>{children}</Responsive>
+    </SectionBlock>
+  );
 };
 
 export default Section;
