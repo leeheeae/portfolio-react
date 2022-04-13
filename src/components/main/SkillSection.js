@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../common/Section';
 import styled from 'styled-components';
 import TitleBox from '../common/TitleBox';
+import ToolsList from './ToolsList';
 
 const SkillSectionBlock = styled(Section)``;
 
@@ -15,6 +16,7 @@ const SkillSection = () => {
         margin="0 auto"
         center
       />
+      <ToolsList />
     </SkillSectionBlock>
   );
 };
