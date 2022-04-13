@@ -1,0 +1,87 @@
+/* _______________Font_________________ */
+/* Font - import*/
+@import url(//db.onlinewebfonts.com/c/150037e11f159dca84bc4c04549094b6?family=Averta-Regular);
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Font - class */
+.Averta {
+  font-family: 'Averta-Regular';
+}
+
+/*_______________ color _________________*/
+
+:root {
+  --background-color: #192024;
+  --background-item-color: #b8434c;
+  --black-color: #192024;
+  --white-color: #fafafa;
+  --gray-color-01: #7a7a7d;
+  --gray-color-02: #9b9ea0;
+  --point-color: #ffd167;
+  --transition: 0.3s;
+  --main-bg-color: var(--background-color);
+  --main-text-color: var(--white-color);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--gray-color-01);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+  border-radius: 0;
+  box-shadow: inset 0px 0px 5px var(--gray-color-01);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+}
