@@ -40,8 +40,12 @@
 - 'A passionate developer who wants to run together'
 - 함께 달리고 싶은 열정적인 프론트앤드 개발자 이희애입니다.
 - Talk, Proejct View 버튼 배치
+
   - 빠른 연락을 위해 배치
   - 아래의 컨텐츠 확인 전 Proejct List로 바로 이동 가능하도록 하기 위해 배치
+
+- 메인 타이틀 <br/>태그 구분하여 줄띄움 효과 내기
+  - split, map을 이용하여 구현
 
 #### Section 02 - 나의 정보 및 코멘트
 

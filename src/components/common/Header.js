@@ -7,6 +7,9 @@ import TalkButton from './TalkButton';
 
 const HeaderBlock = styled.header`
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 `;
 
 const InnerHeaderBlock = styled(Responsive)`
