@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../common/Section';
 import styled from 'styled-components';
 import TalkButton from '../common/TalkButton';
+import ViewBtn from '../common/ViewBtn';
 import TitleBox from '../common/TitleBox';
 
 const IntroSectionBlock = styled(Section)``;
@@ -21,7 +22,8 @@ const IntroSection = () => {
         bigSize
       />
       <BtnList>
-        <TalkButton />
+        <TalkButton big marginRight="1.4rem" />
+        <ViewBtn big />
       </BtnList>
     </IntroSectionBlock>
   );

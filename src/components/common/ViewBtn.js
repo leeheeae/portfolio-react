@@ -1,23 +1,29 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-const TalkButtonBlock = styled.button`
+const ViewBtnBlock = styled.button`
   font-size: 0.92rem;
   font-weight: 500;
   padding: 0.7rem 1.2rem;
   color: #fff;
-  background-color: var(--white-color);
-  border: 1px solid var(--white-color);
-  color: var(--black-color);
+  background-color: var(--gray-color-01);
+  border: 1px solid var(--gray-color-01);
+  color: var(--white-color);
   border-radius: 4px;
   transition: 0.2s;
-  margin-right: ${(props) => props.marginRight || 0};
 
   &:hover {
     border: 1px solid var(--gray-color-01);
     color: var(--white-color);
     background: transparent;
   }
+
+  ${(props) =>
+    props.alignCenter &&
+    css`
+      display: block;
+      margin: 0 auto;
+    `}
 
   ${(props) =>
     props.big &&
@@ -29,8 +35,8 @@ const TalkButtonBlock = styled.button`
     `}
 `;
 
-const TalkButton = ({ ...rest }) => {
-  return <TalkButtonBlock {...rest}>Let's Talk</TalkButtonBlock>;
+const ViewBtn = ({ ...rest }) => {
+  return <ViewBtnBlock {...rest}>Proejct More</ViewBtnBlock>;
 };
 
-export default TalkButton;
+export default ViewBtn;

@@ -11,10 +11,14 @@ const SectionBlock = styled.section`
   align-items: center;
 `;
 
+const ResponsiveSize = styled(Responsive)`
+  padding: 5rem 1rem;
+`;
+
 const Section = ({ children }) => {
   return (
     <SectionBlock>
-      <Responsive>{children}</Responsive>
+      <ResponsiveSize>{children}</ResponsiveSize>
     </SectionBlock>
   );
 };

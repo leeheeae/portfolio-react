@@ -11,7 +11,7 @@ const ToolsBlock = styled.div`
   padding: 1.4rem 1.8rem;
   border-radius: 1.25rem;
   background-color: rgba(255, 255, 255, 0.3);
-  width: 31%;
+  width: 32%;
 
   h3 {
     font-size: 1.3rem;
@@ -122,7 +122,7 @@ const Tools = ({ tool }) => {
       <p className="sub-text">{tool.comment}</p>
       <ul className="tools-list">
         {tool.tools.map((t) => (
-          <li>{t.icon}</li>
+          <li key={t.name}>{t.icon}</li>
         ))}
       </ul>
     </ToolsBlock>
@@ -132,8 +132,8 @@ const Tools = ({ tool }) => {
 const ToolsList = () => {
   return (
     <ToolsListBlock>
-      {ToolsListInfo.map((tool) => (
-        <Tools tool={tool} />
+      {ToolsListInfo.map((tool, index) => (
+        <Tools tool={tool} key={index} />
       ))}
     </ToolsListBlock>
   );
