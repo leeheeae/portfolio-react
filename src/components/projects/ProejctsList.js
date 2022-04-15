@@ -2,9 +2,10 @@ import React from 'react';
 import Responsive from '../common/Responsive';
 import styled from 'styled-components';
 import ProjectListMenu from './ProjectListMenu';
+import ProjectListItem from './ProjectListItem';
 
 const ProejctsListBlock = styled(Responsive)`
-  padding-top: 10rem;
+  padding: 10rem 0;
 `;
 
 const TitleBox = styled.h2`
@@ -15,7 +16,7 @@ const TitleBox = styled.h2`
 
 const ProjectListMenuBlock = styled.ul`
   display: flex;
-  margin-top: 4rem;
+  margin: 3rem 0;
 
   li + li {
     margin-left: 1rem;
@@ -46,6 +47,7 @@ const ProejctsList = () => {
           <ProjectListMenu menu={menu} key={index} />
         ))}
       </ProjectListMenuBlock>
+      <ProjectListItem />
     </ProejctsListBlock>
   );
 };
