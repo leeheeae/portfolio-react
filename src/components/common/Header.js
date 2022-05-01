@@ -44,9 +44,9 @@ const Header = () => {
           </Link>
         </div>
         <div className="rightHeader">
-          <BsGithub size="32px" color="white" />
-          <MdEmail size="32px" color="white" />
-          <AiOutlineMenu size="32px" color="white" />
+          <BsGithub size="28px" color="var(--color-03)" />
+          <MdEmail size="28px" color="var(--color-03)" />
+          <AiOutlineMenu size="28px" color="var(--color-03)" />
         </div>
         {/* <Lnb /> */}
 

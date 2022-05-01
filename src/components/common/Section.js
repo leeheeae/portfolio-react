@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Responsive from './Responsive';
 
 const SectionBlock = styled.section`
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
