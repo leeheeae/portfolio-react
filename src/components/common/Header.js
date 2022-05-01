@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Responsive from './Responsive';
-import Lnb from './Lnb';
-import TalkButton from './TalkButton';
+import { BsGithub } from 'react-icons/bs';
+import { MdEmail } from 'react-icons/md';
+import { AiOutlineMenu } from 'react-icons/ai';
+import Button from './Button';
 
 const HeaderBlock = styled.header`
   width: 100%;
@@ -13,16 +14,23 @@ const HeaderBlock = styled.header`
   backdrop-filter: blur(2px);
 `;
 
-const InnerHeaderBlock = styled(Responsive)`
-  padding: 1.5rem 2rem;
+const InnerHeaderBlock = styled.div`
+  padding: 2rem 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .logo {
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     font-weight: 800;
     letter-spacing: 2px;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+  svg + svg {
+    margin-left: 20px;
   }
 `;
 
@@ -30,11 +38,20 @@ const Header = () => {
   return (
     <HeaderBlock>
       <InnerHeaderBlock>
-        <Link to="/" className="logo">
-          LEEHEEAE 🖐🏻
-        </Link>
-        <Lnb />
-        <TalkButton />
+        <div className="leftHeader">
+          <Link to="/" className="logo">
+            LEEHEEAE 🖐🏻
+          </Link>
+        </div>
+        <div className="rightHeader">
+          <BsGithub size="32px" color="white" />
+          <MdEmail size="32px" color="white" />
+          <AiOutlineMenu size="32px" color="white" />
+        </div>
+        {/* <Lnb /> */}
+
+        {/* <Button margin="0 0 0 20px">email로 연락하기</Button> */}
+        {/* <TalkButton /> */}
       </InnerHeaderBlock>
     </HeaderBlock>
   );
