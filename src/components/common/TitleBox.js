@@ -13,7 +13,7 @@ const TitleBoxBlock = styled.div`
     font-size: 1rem;
     font-weight: 400;
     line-height: 2;
-    color: var(--color-02);
+    color: #333;
   }
 
   margin: ${(props) => props.margin || 0};
@@ -38,7 +38,6 @@ const TitleBoxBlock = styled.div`
     `}
 `;
 
-// className = 'Averta';
 const MainTitle = ({ text }) => {
   return (
     <h1 className="main-title">

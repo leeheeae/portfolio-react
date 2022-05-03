@@ -11,6 +11,11 @@ const MoodboardBlock = styled.ul`
     width: 23%;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1.5rem;
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 `;
 

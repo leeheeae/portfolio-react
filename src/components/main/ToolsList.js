@@ -1,5 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiMysql,
+  SiMongodb,
+  SiExpress,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobexd,
+} from 'react-icons/si';
+import { RiVuejsFill } from 'react-icons/ri';
+import { FaNodeJs } from 'react-icons/fa';
 
 const ToolsListBlock = styled.div`
   display: flex;
@@ -8,33 +22,46 @@ const ToolsListBlock = styled.div`
 
 const ToolsBlock = styled.div`
   margin-top: 4rem;
-  padding: 1.4rem 1.8rem;
-  border-radius: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 32%;
+  padding: 1.5rem 1.8rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  width: 32.5%;
 
   h3 {
     font-size: 1.3rem;
-    font-weight: 400;
-    color: var(--point-color);
+    font-weight: 600;
+    color: var(--color-04);
   }
   .sub-text {
-    margin: 1rem 0;
+    margin: 0.8rem 0 1rem;
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: #fff;
+    color: #333;
   }
   .tools-list {
     display: flex;
     flex-wrap: wrap;
 
     li {
-      width: 60px;
-      height: 60px;
-      margin: 0.4rem;
-      background-color: #fff;
-      border-radius: 8px;
+      width: 25%;
+      margin-bottom: 20px;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+      }
+      p {
+        width: 60px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        color: #444;
+      }
     }
   }
 `;
@@ -47,23 +74,23 @@ const ToolsListInfo = [
     tools: [
       {
         name: 'HTML',
-        icon: '',
+        icon: <SiHtml5 size="42px" />,
       },
       {
         name: 'CSS',
-        icon: '',
+        icon: <SiCss3 size="42px" />,
       },
       {
         name: 'Vanila JS',
-        icon: '',
+        icon: <SiJavascript size="42px" />,
       },
       {
         name: 'React JS',
-        icon: '',
+        icon: <SiReact size="42px" />,
       },
       {
         name: 'Vue Js',
-        icon: '',
+        icon: <RiVuejsFill size="42px" />,
       },
     ],
   },
@@ -74,23 +101,23 @@ const ToolsListInfo = [
     tools: [
       {
         name: 'NODE JS',
-        icon: '',
+        icon: <FaNodeJs size="42px" />,
       },
       {
         name: 'MYSQL',
-        icon: '',
+        icon: <SiMysql size="42px" />,
       },
       {
         name: 'MongoDB',
-        icon: '',
+        icon: <SiMongodb size="42px" />,
       },
       {
         name: 'exporess',
-        icon: '',
+        icon: <SiExpress size="42px" />,
       },
       {
         name: 'Koa',
-        icon: '',
+        icon: <FaNodeJs size="42px" />,
       },
     ],
   },
@@ -101,15 +128,15 @@ const ToolsListInfo = [
     tools: [
       {
         name: 'Photoshop',
-        icon: '',
+        icon: <SiAdobephotoshop size="42px" />,
       },
       {
         name: 'Illustrator',
-        icon: '',
+        icon: <SiAdobeillustrator size="42px" />,
       },
       {
         name: 'Adobe XD',
-        icon: '',
+        icon: <SiAdobexd size="42px" />,
       },
     ],
   },
@@ -122,7 +149,10 @@ const Tools = ({ tool }) => {
       <p className="sub-text">{tool.comment}</p>
       <ul className="tools-list">
         {tool.tools.map((t) => (
-          <li key={t.name}>{t.icon}</li>
+          <li key={t.name}>
+            <div class="icon">{t.icon}</div>
+            <p>{t.name}</p>
+          </li>
         ))}
       </ul>
     </ToolsBlock>

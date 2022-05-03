@@ -10,7 +10,7 @@ const BallBlock = styled.div`
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: linear-gradient(120deg, var(--color-01), var(--color-02)); ;
+  background: linear-gradient(120deg, var(--color-01) 15%, var(--color-02)); ;
 `;
 
 const Ball = () => {

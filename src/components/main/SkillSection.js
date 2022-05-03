@@ -10,7 +10,8 @@ const SkillSection = () => {
   return (
     <SkillSectionBlock>
       <TitleBox
-        mainTitle={`A passionate developer \n who wants to run together 😎`}
+        // mainTitle={`A passionate developer \n who wants to run together 😎`}
+        mainTitle={`새로운 것을 배우는 상황을 \n 두려워하지 않는 개발자`}
         subText="프론트앤드 기술부터 디자인, 백엔드 기술까지, 새로운것을 배우는것에 두려워하지 않습니다."
         maxWidth="60%"
         margin="0 auto"
